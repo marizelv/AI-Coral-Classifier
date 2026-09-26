@@ -2,7 +2,7 @@ const MODEL_URL = "./public/model/model.json";
 const CLASS_URL = "./classes.json";
 
 // Replace this with the threshold selected from your VALIDATION set.
-const CONFIDENCE_THRESHOLD = 0.70;
+const CONFIDENCE_THRESHOLD = 0.95;
 
 const classes = [
   "Acropora cervicornis",

@@ -1,0 +1,9 @@
+{
+  "name": "MBV Coral AI",
+  "short_name": "MBV Coral AI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eef8f7",
+  "theme_color": "#0b6e69",
+  "description": "Mobile coral reef species classification using TensorFlow.js."
+}

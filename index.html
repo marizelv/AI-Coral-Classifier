@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b6e69">
+  <meta name="description" content="MBV Coral AI - Coral reef species classification">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>MBV Coral AI</title>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">🪸 MBV Coral AI</div>
+      <p>Coral Reef Species Classification</p>
+    </header>
+
+    <section class="card">
+      <h2>Analyze a Coral Image</h2>
+      <label class="upload">
+        <span>📷 Take Photo / Upload Image</span>
+        <input id="imageInput" type="file" accept="image/*" capture="environment">
+      </label>
+
+      <div class="preview-wrap">
+        <img id="preview" alt="Selected coral image" hidden>
+      </div>
+
+      <button id="analyzeBtn" disabled>Analyze Image</button>
+      <p id="status" class="status">Loading model...</p>
+    </section>
+
+    <section id="resultCard" class="card result" hidden>
+      <h2>Prediction Result</h2>
+      <div class="species" id="species">—</div>
+      <div class="confidence" id="confidence">—</div>
+      <div class="bar"><div id="barFill"></div></div>
+      <p id="decision">—</p>
+      <hr>
+      <h3>Coral Information</h3>
+      <p id="description">Information will appear here.</p>
+    </section>
+
+    <section class="card small">
+      <h3>Model Information</h3>
+      <p>Input: 256 × 256 × 3</p>
+      <p>Classes: 14 coral-related categories</p>
+      <p>Inference: TensorFlow.js in the browser</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef8f7;
+  color: #173b3a;
+}
+.app { max-width: 620px; margin: auto; padding: 18px; }
+header { text-align: center; padding: 18px 8px; }
+.brand { font-size: 28px; font-weight: 700; }
+header p { margin-top: 8px; color: #55706e; }
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin: 14px 0;
+  box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+.card h2, .card h3 { margin-top: 0; }
+.upload {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  border: 2px dashed #6aa7a3;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.upload input { display: none; }
+.preview-wrap { text-align: center; margin: 16px 0; }
+#preview {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #0b6e69;
+  color: white;
+}
+button:disabled { opacity: .45; cursor: not-allowed; }
+.status { text-align: center; color: #55706e; }
+.result { text-align: center; }
+.species { font-size: 25px; font-weight: 700; margin: 10px 0; }
+.confidence { font-size: 20px; font-weight: 700; }
+.bar { height: 14px; background: #d9e7e6; border-radius: 10px; overflow: hidden; margin: 12px 0; }
+#barFill { height: 100%; width: 0%; background: #0b6e69; transition: width .3s; }
+.small { font-size: 14px; color: #55706e; }
+hr { border: 0; border-top: 1px solid #e2eeee; margin: 18px 0; }

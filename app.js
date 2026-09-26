@@ -1,4 +1,4 @@
-const MODEL_URL = "./public/model/model.json";
+const MODEL_URL = "/model/model.json";
 const CLASS_URL = "./classes.json";
 
 // Replace this with the threshold selected from your VALIDATION set.
